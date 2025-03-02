@@ -1,0 +1,18 @@
+{
+    "name": "miste/back",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Miste\\Back\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "astrokke",
+            "email": "nathan@musielak.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
