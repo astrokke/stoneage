@@ -28,7 +28,7 @@ class inscriptionForm
     {
 
         return '
-        <form metod="POST" >
+        <form metod="POST" name ="inscription" >
         <input type ="text" name="nom" placeholder="nom" required>
         <input type ="email" name="email" placeholder="email" required>
         <input type ="password" name="mdp" placeholder="mdp" required>

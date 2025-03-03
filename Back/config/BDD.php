@@ -12,6 +12,11 @@ class Database
     private $servername = 'localhost';
     private $dbname = 'stoneage';
 
+
+
+
+
+
     public  function getConnection()
     {
         try {

@@ -115,7 +115,7 @@ class User
         $this->avatar = $avatar;
         return $this;
     }
-    public function setStatus(status $status): self
+    public function setStatus(Status $status): self
     {
         $this->status = $status;
         return $this;

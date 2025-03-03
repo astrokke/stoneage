@@ -1,0 +1,21 @@
+{
+  "name": "musielak/back",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Musielak\\Back\\": "src/",
+      "Musielak\\App\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Astrokke",
+      "email": "mistercookie34@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require-dev": {
+    "symfony/var-dumper": "^7.2"
+  }
+}

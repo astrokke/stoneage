@@ -11,17 +11,22 @@ use PDO;
 
 class UserController
 {
-    private PDO $pdo;
 
-    public function __construct()
+
+    public function __construct(private PDO $pdo)
     {
         $database = new  Database();
         $this->pdo = $database->getConnection();
     }
 
 
+
+
+
+
     public function InscriptionUser(User $user)
     {
+
         if ($email = $user->getEmail()) {
             return false;
         }
@@ -46,7 +51,7 @@ class UserController
 
         $user = $stmt->fetchObject("User");
         if ($user && password_verify($mdp, $user->getMdp())) {
-            return $user;
+            return "vous etes connecté $user->getNom()";
         }
 
         return null;
