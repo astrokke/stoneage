@@ -17,9 +17,11 @@ class Router
     }
 
 
+
     public function get($path, $callable)
     {
         $route = new Route($path, $callable);
+
         $this->routes["GET"][] = $route;
         return $route;
     }
