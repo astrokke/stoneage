@@ -3,7 +3,7 @@
         'name' => 'musielak/back',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'faadab0300280927f3f901a434e818249e4a23e1',
+        'reference' => '2cbdd64eb69ba7363c947c6a1a2c37150b6c8a0f',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'musielak/back' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'faadab0300280927f3f901a434e818249e4a23e1',
+            'reference' => '2cbdd64eb69ba7363c947c6a1a2c37150b6c8a0f',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
