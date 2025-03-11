@@ -1,22 +1,9 @@
 <?php
-require_once __DIR__ . '/../vendor/autoload.php';
-
-use Musielak\Back\ErrorHandler;
-
-use Musielak\Back\Router\Router;
-
-ErrorHandler::handle();
 
 
+require_once __DIR__."/../vendor/autoload.php";
 
-$router = new Router($_SERVER["REQUEST_URI"]);
-$router->get('/', function () {
-    echo 'Bienvenue bande de zguegz';
-});
+use Musielak\Back\bootstrapp;
 
 
-$router->get('/login', function () {
-    echo 'login';
-});
-
-$router->run();
+bootstrapp::start();

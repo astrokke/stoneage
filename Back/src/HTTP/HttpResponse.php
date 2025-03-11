@@ -12,10 +12,10 @@ public function __construct( private array $data =[] , private int  $status = 20
 {
     
 }
-    public function json() : void {
+    public static function json(array $data , int $status) : void {
 
-        $this->sanitizeData($this->data);
-        http_response_code($this->status);
+        self::sanitizeData($data);
+        http_response_code($status);
         //defini le code du status
         header("Content-Type: application/json; charset=utf-8");
         //sa doit etre en json et utiliser l'ancodage utf-8
@@ -27,12 +27,12 @@ public function __construct( private array $data =[] , private int  $status = 20
         // pas de cache masi pour les vieux navigateur
         header("Expire : 0");
         // ca expire direct
-        echo json_encode($this->data ,JSON_PRETTY_PRINT| JSON_UNESCAPED_UNICODE |JSON_UNESCAPED_SLASHES );
+        echo json_encode($data ,JSON_PRETTY_PRINT| JSON_UNESCAPED_UNICODE |JSON_UNESCAPED_SLASHES );
         // convertie en json + formatage
     } 
 
 
-    public function html( string $path ,array $data, int $status= 200):void{
+    public static function  html( string $path ,array $data, int $status= 200):void{
         $fullpath = __DIR__."/../../templates/$path";
         // genere le chemain complet vers le dossier template 
         if(file_exists($fullpath) ){
@@ -44,7 +44,7 @@ public function __construct( private array $data =[] , private int  $status = 20
             // c'est du html de type utf-8
             header("X-Content-Type-Options: nosniff");
             // parei linterdie au sniffer
-            $this->sanitizeData($this->data);
+            self::sanitizeData($data);
             // pareil on sanitize les data
             $data["view"] =$fullpath;
             // on transform les clef du tableau en variable $...
@@ -61,7 +61,7 @@ public function __construct( private array $data =[] , private int  $status = 20
 
     }
 
-    public function redirect(string $url , int $status = 302){
+    public static function redirect(string $url , int $status = 302){
         http_response_code($status);
         header("location".$url ,true ,$status);
         exit;
@@ -69,7 +69,7 @@ public function __construct( private array $data =[] , private int  $status = 20
 
     }
 
-    public function sanitizeData(array &$data): void {
+    public static function sanitizeData(array &$data): void {
         // Parcourt chaque élément du tableau $data
         foreach ($data as $key => $value) {
             // Vérifie si la valeur est une chaîne de caractères
@@ -83,7 +83,7 @@ public function __construct( private array $data =[] , private int  $status = 20
             // Vérifie si la valeur est un tableau
             } elseif (is_array($value)) {
                 // Appelle récursivement sanitizeData pour nettoyer les sous-tableaux
-               $this->sanitizeData($data[$key]);
+               self::sanitizeData($data[$key]);
             // Vérifie si la valeur est un booléen
             } elseif (is_bool($value)) {
                 // Convertit le booléen en chaîne 'true' ou 'false'

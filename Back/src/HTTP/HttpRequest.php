@@ -66,4 +66,9 @@ class HttpRequest {
     public function getMethod(): string {
         return $this->method;
     }
+
+    public function getPath():string {
+        return $this->$_SERVER["REQUEST_URI"];
+    }
+    
 }
