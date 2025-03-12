@@ -4,7 +4,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Musielak\\Back\\": "src/",
+      "Musielak\\Back\\": "Back/",
       "Musielak\\App\\": "app/"
     }
   },

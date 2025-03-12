@@ -35,7 +35,7 @@ class ComposerStaticInitc5c40b9019d2e57cf0410d88fff1a790
         ),
         'Musielak\\Back\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/Back',
         ),
         'Musielak\\App\\' => 
         array (

@@ -4,7 +4,7 @@ namespace Musielak\Back;
 
 use Musielak\Back\Router\Router;
 
-class  bootstrapp {
+class  Bootstrap {
 
     public static function start(){
 
