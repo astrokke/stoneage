@@ -1,6 +1,6 @@
 <?php
 
-namespace Musielak\Back\HTTP;
+namespace Stoneage\Back\HTTP;
 
 class HttpRequest {
     private array $get;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Musielak\Back\HTTP;
+namespace Stoneage\Back\HTTP;
 
 require 'HttpResponse.php'; // Assurez-vous que le chemin est correct
 
-use Musielak\Back\HTTP\HttpResponse;
+use Stoneage\Back\HTTP\HttpResponse;
 
 class testResponse {
     public function __construct() {

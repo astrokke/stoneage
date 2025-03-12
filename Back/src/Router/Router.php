@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Musielak\Back\Router;
+namespace Stoneage\Back\Router;
 
 
 class Router

@@ -16,11 +16,9 @@ class ComposerStaticInitc5c40b9019d2e57cf0410d88fff1a790
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
-        ),
-        'M' => 
-        array (
-            'Musielak\\Back\\' => 14,
-            'Musielak\\App\\' => 13,
+            'Stoneage\\Back\\config\\' => 21,
+            'Stoneage\\Back\\' => 14,
+            'Stoneage\\App\\' => 13,
         ),
     );
 
@@ -33,11 +31,15 @@ class ComposerStaticInitc5c40b9019d2e57cf0410d88fff1a790
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
-        'Musielak\\Back\\' => 
+        'Stoneage\\Back\\config\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/Back',
+            0 => __DIR__ . '/../..' . '/config',
         ),
-        'Musielak\\App\\' => 
+        'Stoneage\\Back\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Stoneage\\App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),

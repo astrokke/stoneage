@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Musielak\Back\config;
+namespace Stoneage\Back\config;
 
 
 final class QueryBuilder {
@@ -28,7 +28,7 @@ final class QueryBuilder {
 
  
 
-
+  
     
 public function buildUpdate(array $data): array {
     $setStatements = [];

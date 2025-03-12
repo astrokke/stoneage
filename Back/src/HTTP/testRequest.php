@@ -1,10 +1,10 @@
 <?php
 
-namespace Musielak\Back\HTTP;
+namespace Stoneage\Back\HTTP;
 
 require 'HttpRequest.php';
 require 'HttpResponse.php';
-use Musielak\Back\HTTP\HttpRequest;
+use Stoneage\Back\HTTP\HttpRequest;
 
 class testRequest{
 
@@ -22,14 +22,14 @@ class testRequest{
             
             // Créer une réponse
             $response = new HttpResponse(['message' => 'Données reçues', 'data' => $data], 200);
-            $response->json();
+            $response->json($data ,200);
         } else {
             // Récupérer un paramètre GET
             $id = $request->getParam('id');
             
             // Faire quelque chose avec l'ID
             $response = new HttpResponse(['message' => 'ID reçu: ' . $id], 200);
-            $response->json();
+            $response->json($id ,200 );
         }
 
     }

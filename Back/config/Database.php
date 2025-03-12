@@ -1,15 +1,12 @@
 <?php
 
-
-
-namespace Musielak\Back\config;
+namespace Stoneage\Back\config;
 
 use PDO;
 use PDOException;
 
 class Database
 {
-
     private string $user;
     private string $pass;
     private string $servername;
@@ -27,16 +24,10 @@ class Database
         $this->dbname = $config['dbname'] ?? 'stoneage';
     }
 
-
-
-
-
-    public  function getConnection()
+    public function getConnection()
     {
         try {
-
             $dbh = new PDO("mysql:host={$this->servername};dbname={$this->dbname}", $this->user, $this->pass);
-
             $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $dbh;
         } catch (PDOException $e) {

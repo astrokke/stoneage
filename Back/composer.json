@@ -4,8 +4,8 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Musielak\\Back\\": "Back/",
-      "Musielak\\App\\": "app/"
+      "Stoneage\\Back\\": "src/",
+      "Stoneage\\Back\\config\\": "config/"
     }
   },
   "authors": [

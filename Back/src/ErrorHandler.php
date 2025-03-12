@@ -1,6 +1,6 @@
 <?php
 
-namespace Musielak\Back;
+namespace Stoneage\Back;
 
 class ErrorHandler
 {

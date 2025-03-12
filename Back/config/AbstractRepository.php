@@ -1,12 +1,11 @@
 <?php
 
-namespace Musielak\Back\config;
+namespace Stoneage\Back\config;
 
 use Exception;
-use LDAP\Result;
-use Musielak\Back\config\Database;
+use Stoneage\Back\config\Database;
 use PDOException;
-use Musielak\Back\config\QueryBuilder;
+use Stoneage\Back\config\QueryBuilder;
 use PDO;
 
 abstract class AbstractRepository{

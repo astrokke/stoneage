@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Musielak\Back\HTTP;
+namespace Stoneage\Back\HTTP;
 
 use Exception;
 use InvalidArgumentException;

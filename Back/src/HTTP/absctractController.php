@@ -1,9 +1,9 @@
 <?php
 
-namespace Musielak\Back\HTTP;
+namespace Stoneage\Back\HTTP;
 
 
-use Musielak\Back\HTTP\HttpRequest;
+
 
 class  absctractController{
 

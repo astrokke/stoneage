@@ -2,16 +2,24 @@
 // test_repository.php
 // Placer ce fichier à la racine de votre projet
 
-namespace Musielak\Back\src;
+namespace Stoneage\Back;
 
-
-
-require_once  __DIR__."/Bootstrap.php"; // Assurez-vous que l'autoload est correctement configuré
+require_once  __DIR__."/Bootstrap.php"; 
 
 use Exception;
-use Musielak\Back\config\Database;
-use Musielak\Back\src\Repository\UserRepository;
+use Stoneage\Back\config\Database;
+use Stoneage\Back\HTTP\absctractController;
+use Stoneage\Back\Repository\UserRepository;
+use Stoneage\Back\ErrorHandler;
+error_reporting(E_ALL);
+     ini_set('display_errors', 1);
 
+
+if (class_exists(ErrorHandler::class)) {
+    echo "La classe ErrorHandler est bien chargée.";
+} else {
+    echo "La classe ErrorHandler n'est pas trouvée.";
+}
 // Connexion à la base de données
 $dbConfig = [
     'host' => 'localhost',

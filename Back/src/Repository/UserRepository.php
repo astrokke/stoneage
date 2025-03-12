@@ -1,9 +1,11 @@
 <?php
 
-namespace Musielak\Back\src\Repository;
+namespace Stoneage\Back\Repository;
 
-use Musielak\Back\config\AbstractRepository;
-use Musielak\Back\config\Database;
+
+
+use Stoneage\Back\config\AbstractRepository;
+use Stoneage\Back\config\Database;
 
 class UserRepository extends AbstractRepository{
 

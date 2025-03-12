@@ -1,14 +1,14 @@
 <?php
 
-namespace Musielak\Back;
+namespace Stoneage\Back;
 
-use Musielak\Back\Router\Router;
+require_once __DIR__.'/../vendor/autoload.php';
+use Stoneage\Back\Router\Router;
 
 class  Bootstrap {
 
     public static function start(){
 
-       require_once __DIR__.'/../vendor/autoload.php';
 
        ErrorHandler::handle();
        $router = new Router($_SERVER["REQUEST_URI"]);
