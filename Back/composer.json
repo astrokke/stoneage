@@ -5,6 +5,7 @@
   "autoload": {
     "psr-4": {
       "Stoneage\\Back\\": "src/",
+      "Stoneage\\App\\": "app/",
       "Stoneage\\Back\\config\\": "config/"
     }
   },

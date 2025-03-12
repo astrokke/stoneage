@@ -162,7 +162,7 @@ public function buildSelect(): array {
     }
 
 
-    // reste le querry builder
+    // reset le querry builder
     public function reset(): self
     {
         $this->conditions = [];

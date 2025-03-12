@@ -11,11 +11,9 @@ class Database
     private string $pass;
     private string $servername;
     private string $dbname;
-    private ?PDO $connection = null;
+
     
-    /**
-     * Constructor with default or provided connection parameters
-     */
+   
     public function __construct(array $config = [])
     {
         $this->user = $config['user'] ?? 'root';
